@@ -15,4 +15,4 @@ COPY . .
 # it will copy all the data to docker image
 EXPOSE 80
 # exposing port in the container`o
-ENTRYPOINT ["bin/bash","/opt/entrypoint.sh"]
+ENTRYPOINT ["/bin/bash","/opt/entrypoint.sh"]
