@@ -7,21 +7,21 @@ then
 	cp /opt/guri.html /var/www.html/index.html
 	httpd -DFOREGROUND
 
-elseif [ "$color" == "red" ]
+elif [ "$color" == "red" ]
 
 then 
 
 	cp /opt/red.html /var/www.html/index.html
 	httpd -DFOREGROUND
 
-elseif [ "$color" == "green" ]
+elif [ "$color" == "green" ]
 
 then
 
 	cp /opt/green.html /var/www.html/index.html
         httpd -DFOREGROUND
 
-then
+else
 
 	echo "sorry no Color found" >/var/www.html/index.html
 	httpd -DFOREGROUND	
