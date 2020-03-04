@@ -3,7 +3,7 @@
 if  [  "$color"  ==  "black"  ]
 
 then
-        cp  /opt/ashu.html   /var/www/html/index.html
+        cp  /opt/guri.html   /var/www/html/index.html
         httpd  -DFOREGROUND
 
 elif  [   "$color"  ==  "red"    ]
@@ -20,7 +20,7 @@ then
         httpd  -DFOREGROUND
 
 else
-        echo  "Sorry no color found  "   >/var/www/html/index.html
+        echo  "Opps ! Sorry no color found  "   >/var/www/html/index.html
         httpd  -DFOREGROUND
 
 
